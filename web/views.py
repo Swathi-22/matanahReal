@@ -5,8 +5,14 @@ from web.models import Category,Product,Gallery
 
 
 def index(request):
+    category=Category.objects.all()
+    product = Product.objects.all()[:8]
+    products=Product.objects.filter(is_popular=True)[:3]
     context = {
-        "is_index":True
+        "is_index":True,
+        'category':category,
+        'product':product,
+        'products':products
     }
     return render(request,'web/index.html',context)
 
@@ -18,9 +24,12 @@ def about(request):
     return render(request,'web/about.html',context)
 
 
-def product(request):
+def product(request,slug):
     product=Product.objects.all()
     category=Category.objects.all()
+    if slug != "all":
+        product=Product.objects.filter(category__slug=slug)
+
     context = {
         "is_product":True,
         "product":product,
@@ -43,3 +52,5 @@ def contact(request):
         "is_contact":True
     }
     return render(request,'web/contact.html',context)
+
+

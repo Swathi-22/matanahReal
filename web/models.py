@@ -2,7 +2,7 @@
 from django.db import models
 from versatileimagefield.fields import VersatileImageField,PPOIField
 from tinymce.models import HTMLField
-from django.template.defaultfilters import slugify
+
 
 
 class Contact(models.Model):
@@ -29,6 +29,9 @@ class Gallery(models.Model):
 
 class Category(models.Model):
     title=models.CharField(max_length=50)
+    # is_active=models.BooleanField(default=True)
+    slug=models.SlugField(unique=True)
+    
 
     def __str__(self):
         return self.title
@@ -41,8 +44,7 @@ class Product(models.Model):
     image = VersatileImageField('Image',upload_to='product/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
     is_popular=models.BooleanField(default=False)
-    slug=models.SlugField(unique=True)
-
+    
 
     def __str__(self):
         return self.title

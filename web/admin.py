@@ -16,9 +16,12 @@ class GalleryAdmin(admin.ModelAdmin):
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ( 'title',)
+    prepopulated_fields = {'slug':('title',)}
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ( 'title', 'image',)
-    prepopulated_fields = {'slug':('title',)}
+    
+
+    

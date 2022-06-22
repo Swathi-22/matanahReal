@@ -1,7 +1,9 @@
 from unicodedata import category
 from django.shortcuts import render
 from web.models import Category,Product,Gallery
-
+from .forms import ContactForm
+from django.http import HttpResponse
+import json
 
 
 def index(request):
@@ -47,10 +49,30 @@ def gallery(request):
     return render(request,'web/gallery.html',context)
 
 
+
 def contact(request):
-    context = {
-        "is_contact":True
-    }
-    return render(request,'web/contact.html',context)
+    forms = ContactForm(request.POST or None)
+    if request.method == 'POST':
+        if forms.is_valid():
+            data = forms.save(commit=False)
+            data.referral = "web"
+            data.save()
+            response_data = {
+                "status": "true",
+                "title": "Successfully Submitted",
+                "message": "Message successfully submitted"
+            }
+        else:
+            response_data = {
+                "status": "false",
+                "title": "Form validation error",
+                "message": repr(forms.errors)
+            }
+        return HttpResponse(json.dumps(response_data), content_type='application/javascript')
+    else:
+        context = {
+            "is_contact": True,
+            "forms": forms,
 
-
+        }
+        return render(request, 'web/contact.html', context)

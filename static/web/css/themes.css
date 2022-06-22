@@ -18420,7 +18420,7 @@ a.text-white:focus {
 }
 
 .text-muted {
-    color: #999 !important
+    color: #c02531 !important
 }
 
 .text-black-50 {
@@ -20109,11 +20109,11 @@ a.text-white:focus {
     }
 
     .fs-md-56 {
-        font-size: 56px !important
+        font-size: 36px !important
     }
 
     .fs-md-60 {
-        font-size: 60px !important
+        font-size: 35px !important
     }
 
     .fs-md-80 {
@@ -25564,3 +25564,6 @@ button:focus {
 .call-color{
     color: #c02531;
 }
+/* .back-colour{
+    background-color: #ed9021;
+} */

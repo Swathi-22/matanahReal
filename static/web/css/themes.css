@@ -16099,7 +16099,7 @@ button.bg-white:focus {
 
     .pl-xl-8,
     .px-xl-8 {
-        padding-left: 3.125rem !important
+        padding-left: 29.125rem !important
     }
 
     .p-xl-9 {
@@ -25569,4 +25569,14 @@ button:focus {
 } */
 .text-black{
     color: #000;
+}
+.loaction-icon{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.phone-icon{
+    color: #000;
+}
+.whatsapp-icon{
+    color: green;
 }

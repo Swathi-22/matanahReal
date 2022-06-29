@@ -8,7 +8,7 @@
             data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":false,"dots":true,"arrows":false}'>
             <div class="box">
                 <div class="d-flex flex-column justify-content-center bg-img-cover-center custom-vh-02 custom-height-sm"
-                    style="background-image: url('{% static 'web/images/web stainless bed banner.jpg' %}')">
+                    style="background-image: url('{% static 'web/images/matanah3.jpg' %}')">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="container container-xxl">
                             <p class="text-black font-weight-bold fs-20 mb-3 text-center" data-animate="fadeInUp">STEEL FURNITURE FACTORY</p>
@@ -24,7 +24,7 @@
             </div>
             <div class="box">
                 <div class="d-flex flex-column justify-content-center bg-img-cover-center custom-vh-02 custom-height-sm"
-                    style="background-image: url('{% static 'web/images/matanah 2.jpg' %}')">
+                    style="background-image: url('{% static 'web/images/matanah4.jpg' %}')">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="container container-xxl">
                             <p class="text-black font-weight-bold fs-20 mb-3 text-center" data-animate="fadeInUp">MODERN STEEL FURNITURE</p>
@@ -40,7 +40,7 @@
             </div>
             <div class="box">
                 <div class="d-flex flex-column justify-content-center bg-img-cover-center custom-vh-02 custom-height-sm"
-                    style="background-image: url('{% static 'web/images/matanah banner 3.jpg' %}')">
+                    style="background-image: url('{% static 'web/images/matanah5.jpg' %}')">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="container container-xxl">
                             <p class="text-black font-weight-bold fs-20 mb-3 text-center" data-animate="fadeInUp">FURNITURE & ACCESSORIES</p>
@@ -149,294 +149,25 @@
                         <div style="background-image: url('{{products.image.crop.800x800}}')"
                             class="card-img ratio bg-img-cover-center ratio-1-1">
                         </div>
-                        <div class="card-img-overlay d-flex py-4 py-sm-5 pl-6 pr-4">
-                            <div class="d-flex flex-column">
-                                <a href="#" class="font-weight-bold mb-1 d-block lh-12">{{products.title}}</a>
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 font-weight-500">{{products.category}}</a>
-                                <p class="mt-auto text-primary mb-0 font-weight-500">
-                                    &#8377; {{products.price}}</p>
-                            </div>
-                            <!-- <div class="ml-auto d-flex flex-column">
-                                <div class="my-auto content-change-vertical">
-                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to card"
-                                        class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mb-2 border">
-                                        <i class="far fa-shopping-basket"></i>
-                                    </a>
-                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to favourite"
-                                        class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mb-2 border">
-                                        <i class="far fa-heart"></i>
-                                    </a>
-                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to compare"
-                                        class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mb-2 border">
-                                        <i class="far fa-random"></i>
-                                    </a>
-                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Preview"
-                                        class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mb-2 border">
-                                        <i class="far fa-eye"></i>
-                                    </a>
-                                </div>
-                            </div> -->
+                       
+                    </div>
+                    <div>
+                        <div>
+                            <h3>{{products.title}}</h3>
                         </div>
+                        <div></div>
+                        <label>{{products.category}}</label>
+                        <div>
+                            <label>	&#8377;  {{products.price}}</label>
+                        </div>
+                       
+                       
                     </div>
                 </div>
                 {% endfor %}
 
 
-                {% comment %}
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-02.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">chair</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Potato Chair</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-10.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">decor</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Golden Clock</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-04.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">Table</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Piper Bar</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-16.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">table</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Bow Chair</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-04.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">table</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Bow Chair</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1000.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-06.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">decor</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Golden Clock</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-8" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-05.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">decor</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Golden Clock</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                {% endcomment %}
+        
             </div>
             <div class="text-center">
                 <a href="/product/all/" class="btn btn-outline-primary text-uppercase letter-spacing-05">Shop Now</a>
@@ -451,8 +182,7 @@
                         <div class="card-img bg-img-cover-center"
                             style="background-image: url('{% static 'web/images/banner web side.jpg' %}')"></div>
                         <div class="card-img-overlay d-inline-flex flex-column p-4 px-sm-7 py-sm-8">
-                            <h3 class="card-title fs-30 fs-md-40">Pao by<br>
-                                chiandchi</h3>
+                            <h3 class="card-title fs-30 fs-md-40">Unique Design</h3>
                             <!-- <div class="mt-auto">
 <a href="shop-page-02.html" class="text-uppercase fs-14 letter-spacing-05 border-bottom border-light-dark border-hover-primary font-weight-bold">Shop Now</a>
 </div> -->
@@ -464,7 +194,7 @@
                         <div class="card-img bg-img-cover-center"
                             style="background-image: url('{% static 'web/images/web side 02.jpg' %}')"></div>
                         <div class="card-img-overlay d-inline-flex flex-column align-items-center p-4 p-sm-7">
-                            <h3 class="card-title fs-30 fs-md-34 mb-2">Soft Sofa</h3>
+                            <h3 class="card-title fs-30 fs-md-34 mb-2">Quality Steel</h3>
                             <!-- <div>
 <a href="shop-page-02.html" class="text-uppercase fs-14 letter-spacing-05 border-bottom border-light-dark border-hover-primary font-weight-bold">Shop Now</a>
 </div> -->

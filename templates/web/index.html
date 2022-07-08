@@ -146,25 +146,33 @@
             <div class="row">
 
                 {% for products in product %}
-                <div class="col-sm-6 col-lg-3 mb-6" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div style="background-image: url('{{products.image.crop.800x800}}')"
-                            class="card-img ratio bg-img-cover-center ratio-1-1">
+               
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-6"  data-animate="fadeInUp">
+                    <div class="product-bg">
+
+                        <div class="card border-0 hover-change-content product product-bg-sec">
+                            <!-- <div style="background-image: url('{{products.image.url}}')"
+                                class="card-img ratio bg-img-cover-center ratio-1-1">
+                            </div> -->
+                            <img src="{{products.image.url}}" alt="" class="card-img ratio bg-img-cover-center" style="aspect-ratio: 1/1;">
+
                         </div>
-                       
-                    </div>
-                    <div>
+                    
+
+                    <div class="pdetail">
                         <div>
-                            <h3>{{products.title}}</h3>
+                            <p class="product-head">{{products.title}}</p>
                         </div>
                         <div></div>
                         <label>{{products.category}}</label>
                         <div>
-                            <label>	&#8377;  {{products.price}}</label>
+                            <label> &#8377; {{products.price}}</label>
                         </div>
-                       
-                       
+
+
                     </div>
+                </div>
+                    
                 </div>
                 {% endfor %}
 
@@ -206,50 +214,7 @@
             </div>
         </div>
     </section>
-    {% comment %}
-    <section class="py-10 py-lg-15 bg-img-cover-center bg-custom-01"
-        style="background-image: url('{% static 'web/images/bg-countdown.jpg' %}');">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <h2 class="fs-30 fs-md-60 mb-6 text-center">
-                        Bobby Stool
-                    </h2>
-                    <div class="countdown d-flex justify-content-center mb-8" data-countdown="true"
-                        data-countdown-end="Jan 27, 2022 18:24:25">
-                        <div class="countdown-item d-flex flex-column text-center px-2 px-sm-4">
-                            <span class="fs-30 fs-sm-40 fs-lg-60 lh-1 text-primary day">02</span>
-                            <span
-                                class="fs-12 letter-spacing-05 text-uppercase text-primary font-weight-500">days</span>
-                        </div>
-                        <div class="separate fs-30">:</div>
-                        <div class="countdown-item d-flex flex-column text-center px-2 px-sm-4">
-                            <span class="fs-30 fs-sm-40 fs-lg-60 lh-1 text-primary hour">24</span>
-                            <span
-                                class="fs-12 letter-spacing-05 text-uppercase text-primary font-weight-500">hours</span>
-                        </div>
-                        <div class="separate fs-30">:</div>
-                        <div class="countdown-item d-flex flex-column text-center px-2 px-sm-4">
-                            <span class="fs-30 fs-sm-40 fs-lg-60 lh-1 text-primary minute">15</span>
-                            <span
-                                class="fs-12 letter-spacing-05 text-uppercase text-primary font-weight-500">minutes</span>
-                        </div>
-                        <div class="separate fs-30">:</div>
-                        <div class="countdown-item d-flex flex-column text-center px-2 px-sm-4">
-                            <span class="fs-30 fs-sm-40 fs-lg-60 lh-1 text-primary second">41</span>
-                            <span
-                                class="fs-12 letter-spacing-05 text-uppercase text-primary font-weight-500">seconds</span>
-                        </div>
-                    </div>
-                    <div class="text-center mb-3">
-                        <a href="#" class="btn btn-outline-primary text-uppercase letter-spacing-05 px-5">get only
-                            $1000</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endcomment %}
+    
     <section class="pt-8 pb-7 border-bottom">
         <div class="container container-xxl">
             <div class="slick-slider"
@@ -341,27 +306,16 @@
         <div class="container">
             <h2 class="fs-30 fs-md-40 mb-9 text-center">Popular Items</h2>
             <div class="row">
+                {% comment %}
                 {% for product in products %}
-                <div class="col-md-4 mb-6" data-animate="fadeInUp">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-6" data-animate="fadeInUp">
+                    <div class="product-bg">
                     <div class="card border-0 hover-change-content product">
                         <div class="card-img-top position-relative">
-                            <div style="background-image: url({{product.image.crop.800x800}}"
+                            <!-- <div style="background-image: url({{product.image.url}}"
                                 class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <!-- <div class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-<a href="#" data-toggle="tooltip" title="Add to cart" class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-<i class="far fa-shopping-basket"></i>
-</a>
-<a href="#" data-toggle="tooltip" title="Add to favourite" class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-<i class="far fa-heart"></i>
-</a>
-<a href="#" data-toggle="tooltip" title="Add to compare" class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-<i class="far fa-random"></i>
-</a>
-<a href="#" data-toggle="tooltip" title="Preview" class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-<i class="far fa-eye"></i>
-</a>
-</div> -->
+                            </div> -->
+                            <img src="{{product.image.url}}" alt="" class="card-img ratio bg-img-cover-center" style="aspect-ratio: 1/1;">
                         </div>
                         <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
                             <div class="mr-auto">
@@ -373,82 +327,42 @@
                         </div>
                     </div>
                 </div>
+                </div>
                 {% endfor %}
-
-                {% comment %}
-                <div class="col-md-4 mb-6" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-16.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">chair</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Potato Chair</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-6" data-animate="fadeInUp">
-                    <div class="card border-0 hover-change-content product">
-                        <div class="card-img-top position-relative">
-                            <div style="background-image: url('{% static 'web/images/product-17.jpg' %}')"
-                                class="card-img ratio bg-img-cover-center ratio-1-1">
-                            </div>
-                            <div
-                                class="position-absolute pos-fixed-bottom px-4 px-sm-6 pb-5 d-flex w-100 justify-content-center content-change-horizontal">
-                                <a href="#" data-toggle="tooltip" title="Add to cart"
-                                    class="add-to-cart d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-shopping-basket"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to favourite"
-                                    class="add-to-wishlist d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Add to compare"
-                                    class="add-to-compare d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle mr-2 border">
-                                    <i class="far fa-random"></i>
-                                </a>
-                                <a href="#" data-toggle="tooltip" title="Preview"
-                                    class="preview d-flex align-items-center justify-content-center text-primary bg-white hover-white bg-hover-primary w-45px h-45px rounded-circle border">
-                                    <i class="far fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body px-0 pt-4 pb-0 d-flex align-items-end">
-                            <div class="mr-auto">
-                                <a href="#"
-                                    class="text-uppercase text-muted letter-spacing-05 fs-12 d-block font-weight-500">decor</a>
-                                <a href="#" class="font-weight-bold mt-1 d-block">Golden Clock</a>
-                            </div>
-                            <p class="text-primary mb-0 font-weight-500">$1390.00</p>
-                        </div>
-                    </div>
-                </div>
                 {% endcomment %}
+
+
+
+                {% for product in products %}
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-6"  data-animate="fadeInUp">
+                    <div class="product-bg">
+
+                        <div class="card border-0 hover-change-content product product-bg-sec">
+                            <!-- <div style="background-image: url('{{products.image.url}}')"
+                                class="card-img ratio bg-img-cover-center ratio-1-1">
+                            </div> -->
+                            <img src="{{product.image.url}}" alt="" class="card-img ratio bg-img-cover-center" style="aspect-ratio: 1/1;">
+
+                        </div>
+                    
+
+                    <div class="pdetail">
+                        <div>
+                            <p class="product-head">{{product.title}}</p>
+                        </div>
+                        <div></div>
+                        <label>{{product.category}}</label>
+                        <div>
+                            <label> &#8377; {{product.price}}</label>
+                        </div>
+
+
+                    </div>
+                </div>
+                    
+                </div>
+                {% endfor %}
+                
             </div>
         </div>
     </section>

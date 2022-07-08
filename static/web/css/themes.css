@@ -237,7 +237,8 @@ th {
 
 label {
     display: inline-block;
-    margin-bottom: .5rem
+    margin-bottom: -0.5rem;
+    font-size: 13px;
 }
 
 button {
@@ -381,7 +382,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    margin-bottom: .5rem;
+    margin-bottom: .1rem;
     font-weight: 700;
     line-height: 1.25;
     color: #c02531
@@ -20952,7 +20953,8 @@ a.text-white:focus {
 .bg-img-cover-center {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background: #c9c0bb;
 }
 
 .overflow-x-auto {
@@ -25579,4 +25581,30 @@ button:focus {
 }
 .whatsapp-icon{
     color: green;
+}
+.product-head{
+    color: #c02531;
+    margin-bottom: -6px;
+}
+.product-bg{
+    border: 1px solid #C9C0BB;
+    background-color: #C9C0BB;
+    margin: 0px 0px;
+    border-radius: 10px;
+}
+.product-bg-sec{
+    margin: 10px 10px;
+}
+.pdetail{
+    margin: 0px 10px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:567px){
+    .product-bg{
+        border: 1px solid #C9C0BB;
+        background-color: #C9C0BB;
+        margin: 0px 0px;
+        border-radius: 10px;
+    }
 }

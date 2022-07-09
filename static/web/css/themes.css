@@ -25607,4 +25607,124 @@ button:focus {
         margin: 0px 0px;
         border-radius: 10px;
     }
+    .fs-60 {
+        font-size: 27px !important;
+    }
+    .fs-20 {
+        font-size: 13px !important;
+        margin-top: 0px;
+    }
+    .btn {
+        display: inline-block;
+        font-weight: 700;
+        color:#c02531;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #fff;
+        border: 1px solid transparent;
+        padding: 0.1rem 0.875rem;
+        font-size: .500rem;
+        line-height: 1.65;
+        border-radius: 0;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    .custom-height-sm {
+        height: 159px !important;
+    }
+    .dots-inner-center .slick-dots {
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        right: 0;
+    }
+    .slick-dots span {
+        display: inline-block;
+        line-height: 8px;
+        width: 5px;
+        height: 5px;
+        background: #000;
+        border-radius: 50%;
+    }
+    .slick-dots li.slick-active span {
+        width: 9px;
+        height: 9px;
+        line-height: 14px;
+        display: inline-block;
+        border: 1px solid #000;
+        background: 0 0;
+    }
+    .custom-height-sm {
+        height: 159px !important;
+    }
+    .mob-img{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mob-cat{
+        background-color:#f3992d;
+    }
+    .mob-category-sec{
+        margin: 10px 262px;
+    }
+    .dropdown-menu.show {
+        display: inline-block
+
+}
+
+
+@media only screen and (min-width:568px) and (max-width:768px){
+    .product-bg{
+        border: 1px solid #C9C0BB;
+        background-color: #C9C0BB;
+        margin: 0px 0px;
+        border-radius: 10px;
+    }
+    .fs-60 {
+        font-size: 42px !important;
+    }
+    .fs-20 {
+        font-size: 17px !important;
+        margin-top: 0px;
+    }
+    .btn {
+        display: inline-block;
+        font-weight: 700;
+        color:#c02531;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #fff;
+        border: 1px solid transparent;
+        padding: 0.1rem 0.875rem;
+        font-size: .800rem;
+        line-height: 1.65;
+        border-radius: 0;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    .dots-inner-center .slick-dots {
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        right: 0;
+    }
+    .custom-height-sm {
+        height: 287px !important;
+    }
+    .mob-img{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mob-cat{
+        background-color:#f3992d;
+    }
+    .mob-category-sec{
+       margin: 5px 255px;
+    }
 }

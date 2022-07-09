@@ -40,7 +40,6 @@ class Category(models.Model):
 class Product(models.Model):
     category=models.ForeignKey(Category,on_delete=models.CASCADE)
     title=models.CharField(max_length=225)
-    price=models.FloatField()
     image = VersatileImageField('Image',upload_to='product/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
     is_popular=models.BooleanField(default=False)

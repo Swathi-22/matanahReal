@@ -8,7 +8,7 @@ import json
 
 def index(request):
     category=Category.objects.all()
-    product = Product.objects.all()[:8]
+    product = Product.objects.all()[:6]
     products=Product.objects.filter(is_popular=True)[:6]
     context = {
         "is_index":True,

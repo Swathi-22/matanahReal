@@ -130,11 +130,11 @@
                                     {% for categories in category %}
                                     <a class="dropdown-item media align-items-center border-bottom py-2"
                                         href="/product/{{categories.slug}}">
-                                        <div class="w-28px mr-3">
+                                        <!-- <div class="w-28px mr-3">
                                             <img data-cfsrc="{% static 'web/images/chair.png' %}" alt="Chair"
                                                 style="display:none;visibility:hidden;">
                                             <img src="{% static 'web/images/chair.png' %}" alt="Chair">
-                                        </div>
+                                        </div> -->
                                         <div class="media-body ">{{categories.title}}</div>
                                     </a>
                                     {% endfor %}

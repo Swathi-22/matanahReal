@@ -10558,7 +10558,7 @@ button.bg-white:focus {
 
 .pt-6,
 .py-6 {
-    padding-top: 1.875rem !important
+    padding-top: 0.5rem !important
 }
 
 .pr-6,
@@ -10592,7 +10592,7 @@ button.bg-white:focus {
 
 .pb-7,
 .py-7 {
-    padding-bottom: 2.5rem !important
+    padding-bottom: 0.5rem !important
 }
 
 .pl-7,
@@ -25598,7 +25598,9 @@ button:focus {
 .pdetail{
     margin: 0px 10px;
 }
-
+.banner-head{
+    margin-top: -513px;
+}
 
 @media only screen and (min-width:320px) and (max-width:567px){
     .product-bg{
@@ -25608,10 +25610,10 @@ button:focus {
         border-radius: 10px;
     }
     .fs-60 {
-        font-size: 27px !important;
+        font-size: 21px !important;
     }
     .fs-20 {
-        font-size: 13px !important;
+        font-size: 11px !important;
         margin-top: 0px;
     }
     .btn {
@@ -25668,13 +25670,41 @@ button:focus {
         background-color:#f3992d;
     }
     .mob-category-sec{
-        margin: 10px 262px;
+        margin: 10px 43px;
     }
     .dropdown-menu.show {
-        display: inline-block
+        display: inline-block !important;
+    }
+    .btn1{
+        background-color: #c02531;
+    }
+    .dropdown-pos{
+        position: absolute !important;
+        will-change: transform !important;
+        top: 0px !important;
+        left: 0px !important;
+        transform: translate3d(0px, 28px, 0px) !important;
+    }
+ 
+    .dropdown-menu.show {
+        display: inline-block !important;
+    }
+    .bgimg-size{
+        background-size: cover;
+    }
+    .banner-head{
+        margin-top: -122px;
+    }
 
 }
 
+
+
+@media only screen and (min-width:425px) and (max-width:567px){
+    .mob-category-sec{
+        margin: 10px 96px;
+    }
+}
 
 @media only screen and (min-width:568px) and (max-width:768px){
     .product-bg{
@@ -25727,4 +25757,19 @@ button:focus {
     .mob-category-sec{
        margin: 5px 255px;
     }
+    .dropdown-pos{
+        position: absolute !important;
+        will-change: transform !important;
+        top: 0px !important;
+        left: 0px !important;
+        transform: translate3d(0px, 28px, 0px) !important;
+    }
+ 
+    .dropdown-menu.show {
+        display: inline-block !important;
+    }
+    .banner-head{
+        margin-top: -285px;
+    }
+
 }

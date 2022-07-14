@@ -10,11 +10,13 @@ def index(request):
     category=Category.objects.all()
     product = Product.objects.all()[:6]
     products=Product.objects.filter(is_popular=True)[:6]
+    products_featured=Product.objects.filter(is_featured=True)[:6]
     context = {
         "is_index":True,
         'category':category,
         'product':product,
-        'products':products
+        'products':products,
+        'products_featured':products_featured
     }
     return render(request,'web/index.html',context)
 

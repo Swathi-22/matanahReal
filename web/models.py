@@ -43,6 +43,7 @@ class Product(models.Model):
     image = VersatileImageField('Image',upload_to='product/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
     is_popular=models.BooleanField(default=False)
+    is_featured=models.BooleanField(default=False)
     
 
     def __str__(self):

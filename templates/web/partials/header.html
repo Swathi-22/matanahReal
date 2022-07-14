@@ -49,33 +49,42 @@
     <div class="d-none d-xl-block">
         <div class="pt-6 pb-7">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-xl-12 logo-align">
-                        <a class="navbar-brand mr-0 d-flex align-items-center h-100 py-0" href="{% url 'web:index' %}">
+                <div class="row"> 
+                    <div class="col-lg-4 col-mg-4 col-sm-4 col-4 pt-4 ">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex">
+                                <a href="tel:+966126301330" class=" align-items-center justify-content-end h-100 call-color">
+                                    <span class="d-block mr-2 icon-size"><i class="far fa-phone-alt phone-icon"></i></span></a>
+                                    <a href="https://wa.me/+9660532647031" class=" align-items-center justify-content-xl-start h-100 call-color">
+                                        <span class="d-block mr-2"><i class="fab fa-whatsapp whatsapp-icon"></i></span></a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 text-left d-none">
+                                <a href="https://wa.me/+9660532647031" class=" align-items-center justify-content-xl-start h-100 call-color">
+                                    <span class="d-block mr-2 icon-size"><i class="fab fa-whatsapp whatsapp-icon"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-mg-4 col-sm-4 col-4 text-center">
+                        <a class="navbar-brand mr-0 align-items-center h-100 py-0" href="{% url 'web:index' %}">
                             <script type="text/javascript" style="display:none">
                                 //<![CDATA[
                                 window.__mirage2 = { petok: "12e352e4f6b313b98e034b60c2997d8f5a48034f-1655201252-1800" };
     //]]>
                             </script>
-                            <img data-cfsrc="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor"
+                            <img data-cfsrc="{% static 'web/images/matanah140x61.jpg' %}" alt="Furnitor"
                                 style="display:none;visibility:hidden;">
-                            <img src="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor">
+                            <img src="{% static 'web/images/matanah140x61.jpg' %}" alt="Furnitor">
                         </a>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 pt-4">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                                <a href="tel:+966126301330" class="d-flex align-items-center justify-content-end h-100 call-color">
-                                    <span class="d-block mr-2"><i class="far fa-phone-alt phone-icon"></i></span>Call us
-                                    +966126301330</a>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 text-left">
-                                <a href="https://wa.me/+9660532647031" class="d-flex align-items-center justify-content-xl-start h-100 call-color">
-                                    <span class="d-block mr-2"><i class="fab fa-whatsapp whatsapp-icon"></i></span>Whatsapp us
-                                    +9660532647031</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 social-pad">
+                        <ul class="list-inline text-lg-right">
+                            <li class="list-inline-item mr-4"><a href="https://www.facebook.com/matanahfurniture/info/?tab=page_info" class="fs-20"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item mr-4"><a href="https://plus.google.com/b/106586490254808265379/106586490254808265379" class="fs-20"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/matanahindia" class="fs-20"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCERtyRGe01zHuZsGb2RTX-Q/about" class="fs-20"><i class="fab fa-youtube-square"></i></i></a></li>
+                        </ul>
                     </div>
+                    
                     <!-- <div class="col-xl-6">
     <form class="d-flex align-items-center h-100">
     <div class="input-group position-relative">
@@ -444,9 +453,9 @@
                         <span class="fs-24 toggle-icon"></span>
                     </button>
                     <a class="navbar-brand d-inline-block mx-auto py-0" href="{% url 'web:index' %}">
-                        <img data-cfsrc="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor"
+                        <img data-cfsrc="{% static 'web/images/matanah140x61.jpg' %}" alt="Furnitor"
                             style="display:none;visibility:hidden;">
-                        <img src="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor">
+                        <img src="{% static 'web/images/matanah140x61.jpg' %}" alt="Furnitor">
                     </a>
                     <!-- <a href="#search-popup" data-gtf-mfp="true"
                         data-mfp-options='{"type":"inline","focus": "#keyword","mainClass": "mfp-search-form mfp-move-from-top mfp-align-top"}'
@@ -462,9 +471,9 @@
         <div class="pt-5 pb-7 card border-0 h-100">
             <div class="d-flex align-items-center card-header border-0 py-0 pl-8 pr-7 mb-9 bg-transparent">
                 <a href="#" class="d-block w-52px">
-                    <img data-cfsrc="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor"
+                    <img data-cfsrc="{% static 'web/images/matanah140x61.jpg' %}" alt="Furnitor"
                         style="display:none;visibility:hidden;">
-                        <img src="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor">
+                        <img src="{% static 'web/images/matanah140x61.jpg' %}" alt="Furnitor">
                             
                 </a>
                 <span class="canvas-close d-inline-block text-right fs-24 ml-auto lh-1 text-primary"><i

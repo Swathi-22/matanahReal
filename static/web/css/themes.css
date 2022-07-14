@@ -10011,7 +10011,7 @@ button.bg-white:focus {
 
 .mr-2,
 .mx-2 {
-    margin-right: .625rem !important
+    margin-right: 1.625rem !important
 }
 
 .mb-2,
@@ -25601,6 +25601,14 @@ button:focus {
 .banner-head{
     margin-top: -513px;
 }
+.social-pad{
+    padding-top: 18px;
+}
+.icon-size{
+    font-size: 20px;
+}
+
+
 
 @media only screen and (min-width:320px) and (max-width:567px){
     .product-bg{

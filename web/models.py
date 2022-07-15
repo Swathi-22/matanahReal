@@ -50,3 +50,28 @@ class Product(models.Model):
         return self.title
 
 
+
+
+class Ad1(models.Model):
+    image = VersatileImageField('Image',upload_to='Ad/',ppoi_field='ppoi')
+    ppoi = PPOIField('Image PPOI')
+
+
+    class Meta:
+        verbose_name_plural = ("Advertisement 1")
+
+    def __str__(self):
+        return str(self.image)
+
+
+
+class Ad2(models.Model):
+    image = VersatileImageField('Image',upload_to='Ad/',ppoi_field='ppoi')
+    ppoi = PPOIField('Image PPOI')
+
+
+    class Meta:
+        verbose_name_plural = ("Advertisement 2")
+
+    def __str__(self):
+        return str(self.image)

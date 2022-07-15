@@ -75,10 +75,10 @@
     {% endcomment %}
 
 <!-- ======================================================================== -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="z-index: 100;">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="{% static 'web/images/banner1.jpg' %}" alt="First slide">
+        <img class="d-block w-100 res-img" src="{% static 'web/images/cabinet1banner.jpg' %}" alt="First slide">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="container container-xxl banner-head ">
                 <p class="text-black font-weight-bold fs-20 mb-3 text-center" data-animate="fadeInUp">
@@ -94,7 +94,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="{% static 'web/images/banner02.jpg' %}" alt="Second slide">
+        <img class="d-block w-100 res-img" src="{% static 'web/images/banner02m.jpg' %}" alt="Second slide">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="container container-xxl banner-head">
                 <p class="text-black font-weight-bold fs-20 mb-3 text-center" data-animate="fadeInUp">
@@ -112,7 +112,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="{% static 'web/images/matanah5.jpg' %}" alt="Third slide">
+        <img class="d-block w-100 res-img" src="{% static 'web/images/matanah5.jpg' %}" alt="Third slide">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="container container-xxl banner-head">
                 <p class="text-black font-weight-bold fs-20 mb-3 text-center" data-animate="fadeInUp">
@@ -229,6 +229,12 @@
 
 
 
+<!-- ==================================================================== -->
+
+<!-- ==================================================================== -->
+
+
+
 
     <section class="pb-11 pb-lg-15 pt-4">
         <div class="container">
@@ -276,31 +282,40 @@
             </div>
         </div>
     </section>
+   
     <section class="pb-10 pb-lg-15">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-6 mb-lg-0">
                     <div class="card border-0 banner banner-07">
-                        <div class="card-img bg-img-cover-center bgimg-size"
-                            style="background-image: url('{% static 'web/images/banner web side.jpg' %}')"></div>
+                        {% for ad in ad1 %}
+                        <div class="card-img bg-img-cover-center bgimg-size" style="background-image: url({{ad.image.crop.770x370}})">
+                        </div>
+                        {% endfor %}
+                            {% comment %}
                         <div class="card-img-overlay d-inline-flex flex-column p-4 px-sm-7 py-sm-8">
                             <h3 class="card-title fs-30 fs-md-40">Unique Design</h3>
                             <!-- <div class="mt-auto">
 <a href="shop-page-02.html" class="text-uppercase fs-14 letter-spacing-05 border-bottom border-light-dark border-hover-primary font-weight-bold">Shop Now</a>
 </div> -->
                         </div>
+                        {% endcomment %}
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card border-0 banner banner-07">
-                        <div class="card-img bg-img-cover-center bgimg-size"
-                            style="background-image: url('{% static 'web/images/web side 02.jpg' %}')"></div>
+                        {% for ad in ad2 %}
+                        <div class="card-img bg-img-cover-center bgimg-size1" style="background-image: url({{ad.image.crop.613x613}})">
+                        </div>
+                        {% endfor %}
+                            {% comment %}
                         <div class="card-img-overlay d-inline-flex flex-column align-items-center p-4 p-sm-7">
                             <h3 class="card-title fs-30 fs-md-34 mb-2">Quality Steel</h3>
                             <!-- <div>
 <a href="shop-page-02.html" class="text-uppercase fs-14 letter-spacing-05 border-bottom border-light-dark border-hover-primary font-weight-bold">Shop Now</a>
 </div> -->
                         </div>
+                        {% endcomment %}
                     </div>
                 </div>
             </div>

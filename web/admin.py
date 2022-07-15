@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact,Gallery,Category,Product
+from .models import Contact,Gallery,Category,Product,Ad1,Ad2
 
 
 
@@ -24,4 +24,13 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ( 'title', 'image',)
     
 
+
+@admin.register(Ad1)
+class Ad1Admin(admin.ModelAdmin):
+    list_display = ('image',)
     
+
+
+@admin.register(Ad2)
+class Ad2Admin(admin.ModelAdmin):
+    list_display = ('image',)

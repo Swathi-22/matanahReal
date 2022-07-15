@@ -1,6 +1,6 @@
 from unicodedata import category
 from django.shortcuts import render
-from web.models import Category,Product,Gallery
+from web.models import Category,Product,Gallery,Ad1,Ad2
 from .forms import ContactForm
 from django.http import HttpResponse
 import json
@@ -11,12 +11,16 @@ def index(request):
     product = Product.objects.all()[:6]
     products=Product.objects.filter(is_popular=True)[:6]
     products_featured=Product.objects.filter(is_featured=True)[:6]
+    ad1=Ad1.objects.all()
+    ad2=Ad2.objects.all()
     context = {
         "is_index":True,
         'category':category,
         'product':product,
         'products':products,
-        'products_featured':products_featured
+        'products_featured':products_featured,
+        'ad1':ad1,
+        'ad2':ad2
     }
     return render(request,'web/index.html',context)
 

@@ -3,17 +3,17 @@
     <div class="container container-xxl">
     <div class="row">
     <div class="col-lg mb-6 mb-lg-0">
-    <a href="#" class="footer-logo d-block"><img data-cfsrc="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor" style="display:none;visibility:hidden;">
-        <img src="{% static 'web/images/Matanah Logo.png' %}" alt="Furnitor"></a>
+    <a href="#" class="footer-logo d-block"><img data-cfsrc="{% static 'web/images/matanah.svg' %}" alt="Furnitor" style="display:none;visibility:hidden;">
+        <img src="{% static 'web/images/matanah.svg' %}" alt="Furnitor" style="width: 62%;"></a>
     </div>
-    <div class="col-sm-6 col-lg mb-6 mb-lg-0">
+    <div class="col-sm-6 col-lg col-6  mb-6 mb-lg-0">
     <ul class="list-unstyled mb-0">
     <li class="py-0"><a href="{% url 'web:index' %}" class="lh-213 font-weight-500">Home</a> </li>
     <li class="py-0"><a href="{% url 'web:about' %}" class="lh-213 font-weight-500">About</a> </li>
     <li class="py-0"><a href="/product/all/" class="lh-213 font-weight-500">Prodcut</a> </li>
     </ul>
     </div>
-    <div class="col-sm-6 col-lg mb-6 mb-lg-0">
+    <div class="col-sm-6 col-lg col-6 mb-6 mb-lg-0">
     <ul class="list-unstyled mb-0">
     <li class="py-0"><a href="{% url 'web:gallery' %}" class="lh-213 font-weight-500">Gallery</a> </li>
     <li class="py-0"><a href="{% url 'web:contact' %}" class="lh-213 font-weight-500">Contact</a> </li>
@@ -43,8 +43,12 @@
 
 
 
-    <a href="https://wa.me/+9660532647031" class="whats-link"> <i class="fab fa-whatsapp whatsapp-icon icon-size-wa"></i></a>
-  <a href="tel:+966126301330" class="whats-link-2"> <i class="far fa-phone-alt phone-icon icon-size-ph"></i> </a>
+    <a href="https://wa.me/+9660532647031" class="whats-link d-lg-none">
+      <img src="{% static 'web/images/whatsapp.png' %}" alt="" srcset="" class="whatsapp-icon icon-size-wa">
+       <!-- <i class="fab fa-whatsapp "></i></a> -->
+  <a href="tel:+966126301330" class="whats-link-2 d-lg-none"> 
+    <img src="{% static 'web/images/telephone.png' %}" alt="" srcset="" class="whatsapp-icon icon-size-ph">
+    <!-- <i class="far fa-phone-alt phone-icon icon-size-ph"></i> </a> -->
 
     </footer>
     

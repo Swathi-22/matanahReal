@@ -9949,7 +9949,7 @@ button.bg-white:focus {
 }
 
 .vh-100 {
-    height: 55vh !important
+    height: 60vh !important
 }
 
 .m-0 {
@@ -10654,12 +10654,12 @@ button.bg-white:focus {
 
 .pt-10,
 .py-10 {
-    padding-top: 4.375rem !important
+    padding-top: 1.375rem !important
 }
 
 .pr-10,
 .px-10 {
-    padding-right: 4.375rem !important
+    padding-right: 1.375rem !important
 }
 
 .pb-10,
@@ -14859,7 +14859,7 @@ button.bg-white:focus {
 
     .pt-lg-14,
     .py-lg-14 {
-        padding-top: 6.875rem !important
+        padding-top: 1.875rem !important
     }
 
     .pr-lg-14,
@@ -14941,12 +14941,12 @@ button.bg-white:focus {
 
     .pb-lg-17,
     .py-lg-17 {
-        padding-bottom: 10.625rem !important
+        padding-bottom: 0.625rem !important
     }
 
     .pl-lg-17,
     .px-lg-17 {
-        padding-left: 10.625rem !important
+        padding-left: 0.625rem !important
     }
 
     .p-lg-18 {

@@ -52,26 +52,16 @@ class Product(models.Model):
 
 
 
-class Ad1(models.Model):
+class Advertisement(models.Model):
     image = VersatileImageField('Image',upload_to='Ad/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
-
+   
 
     class Meta:
-        verbose_name_plural = ("Advertisement 1")
+        verbose_name_plural = ("Advertisement")
 
     def __str__(self):
         return str(self.image)
 
 
 
-class Ad2(models.Model):
-    image = VersatileImageField('Image',upload_to='Ad/',ppoi_field='ppoi')
-    ppoi = PPOIField('Image PPOI')
-
-
-    class Meta:
-        verbose_name_plural = ("Advertisement 2")
-
-    def __str__(self):
-        return str(self.image)

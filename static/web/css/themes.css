@@ -25598,7 +25598,7 @@ button:focus {
     margin: 1px 1px;
 }
 .pdetail{
-    margin: 0px 10px;
+    margin: 5px 10px;
 }
 .banner-head{
     margin-top: -513px;
@@ -25617,6 +25617,9 @@ button:focus {
 }
 
 @media only screen and (min-width:320px) and (max-width:567px){
+    .row-margin{
+        margin: 0px 0px !important;
+    }
     .product-bg{
         border: 1px solid #EDEDEC;
         background-color: #EDEDEC;
@@ -25799,6 +25802,9 @@ button:focus {
     .fs-30 {
         font-size: 18px !important;
     }
+    .row-margin{
+        margin: 0px 0px;
+    }
 
 }
 
@@ -25817,9 +25823,15 @@ button:focus {
     .icon-size-ph{
         width:5.8% ;
     }
+    .row-margin{
+        margin: 0px 0px !important;
+    }
 }
 
 @media only screen and (min-width:568px) and (max-width:768px){
+    .row-margin{
+        margin: 0px 0px !important;
+    }
     .product-bg{
         border: 1px solid #EDEDEC;
         background-color: #EDEDEC;
@@ -25936,7 +25948,9 @@ button:focus {
     padding: 5px 5px;
     font-size: 11px !important;
 }
-
+.row-margin{
+    margin: 0px 206px;
+}
 
 
 

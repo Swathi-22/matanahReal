@@ -19,6 +19,11 @@ class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('title',)}
 
 
+# @admin.register(SubCategory)
+# class SubCategoryAdmin(admin.ModelAdmin):
+#     list_display = ( 'title',)
+
+
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ( 'title', 'image',)

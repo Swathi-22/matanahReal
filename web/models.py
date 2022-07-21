@@ -29,7 +29,8 @@ class Gallery(models.Model):
 
 class Category(models.Model):
     title=models.CharField(max_length=50)
-    # is_active=models.BooleanField(default=True)
+    image = VersatileImageField('Image',upload_to='category/',ppoi_field='ppoi')
+    ppoi = PPOIField('Image PPOI')
     slug=models.SlugField(unique=True)
     
 
@@ -37,18 +38,29 @@ class Category(models.Model):
         return self.title
 
 
+
+
+# class SubCategory(models.Model):
+#     category=models.ForeignKey(Category,on_delete=models.CASCADE)
+#     title=models.CharField(max_length=50)
+    
+
+#     def __str__(self):
+#         return self.title
+
+
+
 class Product(models.Model):
     category=models.ForeignKey(Category,on_delete=models.CASCADE)
-    title=models.CharField(max_length=225)
+    sub_category=models.CharField(max_length=225,blank=True,null=True)
+    title=models.CharField(max_length=225,blank=True,null=True)
     image = VersatileImageField('Image',upload_to='product/',ppoi_field='ppoi')
     ppoi = PPOIField('Image PPOI')
     is_popular=models.BooleanField(default=False)
-    is_featured=models.BooleanField(default=False)
     
 
     def __str__(self):
         return self.title
-
 
 
 

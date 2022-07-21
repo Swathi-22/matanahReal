@@ -8,7 +8,13 @@
             class="d-flex flex-column h-100 align-items-center justify-content-center justify-content-xxl-start pt-xxl-13">
             <div class="container">
                 <!-- <p class="text-center text-black fs-20 font-weight-bold mb-4">Matanah</p> -->
+                {% for product in product %}
+                {% if  product.category.slug != "all" %}
+                <h1 class="fs-60 fs-lg-90 lh-1 text-center text-white">{{product.category.title}}</h1>
+                {% else %}
                 <h1 class="fs-60 fs-lg-90 lh-1 text-center text-white">Products</h1>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -181,10 +187,10 @@
                                 <p class="product-head">{{products.title}}</p>
                             </div>
                             <div></div>
+                            <label>{{products.sub_category}}</label> <br>
                             <label>{{products.category}}</label>
-                           
 
-
+                            
                         </div>
                     </div>
                         

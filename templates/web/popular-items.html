@@ -1,0 +1,68 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+<main id="content">
+    <section class="d-flex flex-column bg-img-cover-center vh-100 custom-height-sm pt-xxl-13"
+        style="background-image: url('{% static 'web/images/matanahbanner.jpg' %}');">
+        <div
+            class="d-flex flex-column h-100 align-items-center justify-content-center justify-content-xxl-start pt-xxl-13">
+            <div class="container">
+                <!-- <p class="text-center text-black fs-20 font-weight-bold mb-4">Matanah</p> -->
+                <h1 class="fs-60 fs-lg-90 lh-1 text-center text-white">Popular Items</h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    
+       
+        <div class="container container-xxl" style="margin-top:20px ;">
+            <div class="row mb-7 overflow-hidden">
+
+                {% for popular in popular_products %}
+                
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-6"  data-animate="fadeInUp">
+                        <div class="product-bg">
+
+                            <div class="card border-0 hover-change-content product product-bg-sec">
+                                <!-- <div style="background-image: url('{{products.image.url}}')"
+                                    class="card-img ratio bg-img-cover-center ratio-1-1">
+                                </div> -->
+                                <a href="{{popular.image.url}}">
+
+                                    <img src="{{popular.image.url}}" alt="" class="card-img ratio bg-img-cover-center"
+                                        style="aspect-ratio: 1/1;">
+                                </a>
+
+                            </div>
+                        
+
+                        <div class="pdetail">
+                            <div>
+                                <p class="product-head">{{popular.title}}</p>
+                            </div>
+                            <div></div>
+                            <label>{{popular.sub_category}}</label>
+                            <label>{{popular.category}}</label>
+
+                            
+                        </div>
+                    </div>
+                        
+                    </div>
+                
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+</main>
+
+
+
+{% endblock %}

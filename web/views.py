@@ -35,14 +35,18 @@ def about(request):
 def product(request,slug):
     product=Product.objects.all()
     category=Category.objects.all()
+    category_name="All Products"
     if slug != "all":
         product=Product.objects.filter(category__slug=slug)
-       
+        category_name=Category.objects.get(slug=slug).title
 
+ 
     context = {
         "is_product":True,
         "product":product,
-        "category":category
+        "category":category,
+        "category_name":category_name
+      
     }
     return render(request,'web/product.html',context)
 

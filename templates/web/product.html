@@ -8,13 +8,15 @@
             class="d-flex flex-column h-100 align-items-center justify-content-center justify-content-xxl-start pt-xxl-13">
             <div class="container">
                 <!-- <p class="text-center text-black fs-20 font-weight-bold mb-4">Matanah</p> -->
-                {% for product in product %}
+                <!-- {% for product in product %}
                 {% if  product.category.slug != "all" %}
                 <h1 class="fs-60 fs-lg-90 lh-1 text-center text-white">{{product.category.title}}</h1>
                 {% else %}
                 <h1 class="fs-60 fs-lg-90 lh-1 text-center text-white">Products</h1>
                 {% endif %}
-                {% endfor %}
+                {% endfor %} -->
+                
+                <h1 class="fs-60 fs-lg-90 lh-1 text-center text-white">{{category_name}}</h1>
             </div>
         </div>
     </section>
@@ -23,6 +25,7 @@
             <h1 class="fs-40 mb-1 text-capitalize text-center">Shop All</h1>
         </div> -->
          <!-- ====================================================== -->
+    {% comment %}
     <!-- Browse category in mob and tab -->
     <div class="col-xl-3 d-lg-none">
         <div class="dropdown no-caret mob-category-sec">
@@ -46,7 +49,7 @@
                 </a>
                 {% endfor %}
 
-                {% comment %}
+                
                 <a class="dropdown-item media align-items-center border-bottom py-2" href="#">
                     <div class="w-28px mr-3">
                         <img data-cfsrc="{% static 'web/images/desk.png' %}" alt="Table"
@@ -101,11 +104,12 @@
                     <div class="media-body">Stands
                     </div>
                 </a>
-                {% endcomment %}
+                
             </div>
         </div>
     </div>
     <!-- End of Browse category in mob and tab -->
+    {% endcomment %}
     <!-- ==================================================== -->
     </section>
     <section>
